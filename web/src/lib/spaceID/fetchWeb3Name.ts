@@ -7,11 +7,17 @@ export const FetchWeb3Name = async (web3name: any, address: any) => {
       //   rpcURL: "https://ethereum-rpc.publicnode.com",
       // });
       // console.log("Fetched Web3 Name:", webName);
-      const response = await axios.get(
+      const bnb_response = await axios.get(
+        `https://api.prd.space.id/v1/getName?tld=bnb&address=${address}`
+      );
+      if (bnb_response.data.name) {
+        return bnb_response.data.name;
+      }
+      const eth_response = await axios.get(
         `https://api.prd.space.id/v1/getName?tld=eth&address=${address}`
       );
-      if (response.data.name) {
-        return response.data.name;
+      if (eth_response.data.name) {
+        return eth_response.data.name;
       } else {
         return null;
       }
@@ -21,14 +27,22 @@ export const FetchWeb3Name = async (web3name: any, address: any) => {
   }
 };
 
-export const resolveAddressToName = async (web3name: any, address: string) => {
+export const resolveAddressToName = async (address: string) => {
   try {
-    const response = await axios.get(
+    const bnb_response = await axios.get(
+      `https://api.prd.space.id/v1/getName?tld=bnb&address=${address}`
+    );
+    if (bnb_response.data.name) {
+      return bnb_response.data.name;
+    }
+    const eth_response = await axios.get(
       `https://api.prd.space.id/v1/getName?tld=eth&address=${address}`
     );
-
-    const webName = response.data.name;
-    return webName || address.slice(0, 6) + "..." + address.slice(-4);
+    if (eth_response.data.name) {
+      return eth_response.data.name;
+    } else {
+      return address.slice(0, 6) + "..." + address.slice(-4);
+    }
   } catch (error) {
     console.error("Error resolving name:", error);
     return address.slice(0, 6) + "..." + address.slice(-4);
