@@ -1,11 +1,30 @@
 # **TrustGigz: Bridging Trust in Freelancing**
 
+## **Table of Contents**
+1. [Introduction](#introduction)  
+2. [Mainnet and Testnet Domains](#mainnet-and-testnet-domains)  
+3. [Problem](#problem)  
+4. [Solution](#solution)  
+5. [Architecture](#architecture)  
+6. [Sponsors](#sponsors)  
+   - [BAS](#bas)  
+   - [ZKPass](#zkpass)  
+   - [SpaceID](#spaceid)  
+
+---
+
 ## **Introduction**
 TrustGigz is a decentralized platform designed to solve the persistent trust issues between freelancers and clients in the freelancing ecosystem. By leveraging blockchain technology, attestations, and AI-powered evaluations, TrustGigz ensures transparency, fairness, and security in freelance collaborations.
 
 ---
 
-## **Problem Statement**
+## **Mainnet and Testnet Domains**
+- **Mainnet Domain**: [trustgigz-mainnet.vercel.app](https://trustgigz-mainnet.vercel.app)  
+- **Testnet Domain**: [trustgigz.vercel.app](https://trustgigz.vercel.app)
+
+---
+
+## **Problem**
 Freelancing platforms today face significant trust deficits:
 1. **Mismatched Expectations**: Clients and freelancers often disagree on whether the delivered work meets the job description (JD).
 2. **Dispute Escalations**: Without transparent and impartial dispute resolution systems, conflicts frequently arise.
