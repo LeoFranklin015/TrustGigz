@@ -1,8 +1,0 @@
-{
-  "optimism-sepolia": {
-    "GigFactory": {
-      "address": "0x660Ae50DD8241a174beD3b4300246af29C36a1d9",
-      "startBlock": 20972545
-    }
-  }
-}
