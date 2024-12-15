@@ -22,6 +22,9 @@ TrustGigz is a decentralized platform designed to solve the persistent trust iss
 - **Mainnet Domain**: [trustgigz-mainnet.vercel.app](https://trustgigz-mainnet.vercel.app)  
 - **Testnet Domain**: [trustgigz.vercel.app](https://trustgigz.vercel.app)
 
+- **Mainnet Repo** : https://github.com/LeoFranklin015/TrustGigz-mainnet
+
+
 ---
 
 ## **Problem**
