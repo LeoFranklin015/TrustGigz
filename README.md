@@ -61,4 +61,46 @@ TrustGigz addresses these challenges through a structured and decentralized appr
 <img width="1221" alt="Screenshot 2024-12-14 at 7 24 08 PM" src="https://github.com/user-attachments/assets/0f80e8a9-3727-43fb-a7e1-400a1bd740e5" />
 
 
+## **Sponsors**
+
+### **BAS**
+
+BAS provides the foundational attestation framework for the platform. Below are the key attestations implemented:
+
+#### **1. ClientAttestation**  
+- **Description**: Clients attest themselves as verified entities on the platform, serving as a foundational proof of identity.  
+  - **Mainnet**: [0x671de200dd06a41bc1637ae3b3ee5f8e914e3b3a9559e2feddb6a869ef64417c](https://bascan.io/schema/0x671de200dd06a41bc1637ae3b3ee5f8e914e3b3a9559e2feddb6a869ef64417c)  
+  - **Testnet**: [0x671de200dd06a41bc1637ae3b3ee5f8e914e3b3a9559e2feddb6a869ef64417c](https://testnet.bascan.io/schema/0x671de200dd06a41bc1637ae3b3ee5f8e914e3b3a9559e2feddb6a869ef64417c)  
+
+#### **2. FreelancerAttestation**  
+- **Description**: Freelancers attest their presence and credentials on the platform, ensuring verified participation.  
+  - **Mainnet**: [0x429ad524f39cc3fcd95c367f0f6d86ea2e5a1966c3facd7903538bb9f2f94888](https://bascan.io/schema/0x429ad524f39cc3fcd95c367f0f6d86ea2e5a1966c3facd7903538bb9f2f94888)  
+  - **Testnet**: [0x429ad524f39cc3fcd95c367f0f6d86ea2e5a1966c3facd7903538bb9f2f94888](https://testnet.bascan.io/schema/0x429ad524f39cc3fcd95c367f0f6d86ea2e5a1966c3facd7903538bb9f2f94888)  
+
+#### **3. GigAttestation**  
+- **Description**: Created whenever a client posts a gig (job) on the platform. Includes details like job description, deliverables, budget, and deadlines.  
+  - **Mainnet**: [0xb3221d0e61e90db95e4a4c1799725caabf8ffdec227897eab359abf3fd6191fe](https://bascan.io/schema/0xb3221d0e61e90db95e4a4c1799725caabf8ffdec227897eab359abf3fd6191fe)  
+  - **Testnet**: [0xb3221d0e61e90db95e4a4c1799725caabf8ffdec227897eab359abf3fd6191fe](https://testnet.bascan.io/schema/0xb3221d0e61e90db95e4a4c1799725caabf8ffdec227897eab359abf3fd6191fe)  
+
+#### **4. GigAgreement**  
+- **Description**: Generated when a client chooses a freelancer and both parties sign an agreement. Serves as an immutable proof of commitment.  
+  - **Mainnet**: [0x09e3e1dc8c19670ccf128c657bfcb707d792921852df48ce837af27e5666322c](https://bascan.io/schema/0x09e3e1dc8c19670ccf128c657bfcb707d792921852df48ce837af27e5666322c)  
+  - **Testnet**: [0x09e3e1dc8c19670ccf128c657bfcb707d792921852df48ce837af27e5666322c](https://testnet.bascan.io/schema/0x09e3e1dc8c19670ccf128c657bfcb707d792921852df48ce837af27e5666322c)  
+
+#### **5. EvaluationAttestation**  
+- **Description**: Created after the freelancer submits their work. AI evaluates the submission, generating a relevance score and feedback, which is recorded as part of this attestation.  
+  - **Mainnet**: [0x784be583b872cdf051ae174d034cd499d3e5f17b35d6640e6cd052068c6b17d2](https://bascan.io/schema/0x784be583b872cdf051ae174d034cd499d3e5f17b35d6640e6cd052068c6b17d2)  
+  - **Testnet**: [0x784be583b872cdf051ae174d034cd499d3e5f17b35d6640e6cd052068c6b17d2](https://testnet.bascan.io/schema/0x784be583b872cdf051ae174d034cd499d3e5f17b35d6640e6cd052068c6b17d2)  
+
+#### **6. DisputeAttestation**  
+- **Description**: Created whenever a dispute is raised, including the reason for the dispute. Links back to the relevant GigAttestation.  
+  - **Mainnet**: [0xfcbd204f6589f50e8b92031c3b256838ad1913dbbdf769b747d1ff23ef4a07f1](https://bascan.io/schema/0xfcbd204f6589f50e8b92031c3b256838ad1913dbbdf769b747d1ff23ef4a07f1)  
+  - **Testnet**: [0xfcbd204f6589f50e8b92031c3b256838ad1913dbbdf769b747d1ff23ef4a07f1](https://testnet.bascan.io/schema/0xfcbd204f6589f50e8b92031c3b256838ad1913dbbdf769b747d1ff23ef4a07f1)  
+
+#### **7. VoteOnDisputeAttestation**  
+- **Description**: Generated when validators vote on a dispute. Points to the DisputeAttestation and further links to the associated GigAttestation, ensuring transparency in validator decisions.  
+  - **Mainnet**: [0x645ac1d4ea9c398ce4e5789f57269a526b925d5f92916f3391f7e1065eede38c](https://bascan.io/schema/0x645ac1d4ea9c398ce4e5789f57269a526b925d5f92916f3391f7e1065eede38c)  
+  - **Testnet**: [0x645ac1d4ea9c398ce4e5789f57269a526b925d5f92916f3391f7e1065eede38c](https://testnet.bascan.io/schema/0x645ac1d4ea9c398ce4e5789f57269a526b925d5f92916f3391f7e1065eede38c)  
+
+
 
