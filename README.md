@@ -107,7 +107,7 @@ BAS provides the foundational attestation framework for the platform. Below are 
 
 ### **ZKPass**  
 For detailed information and implementation regarding ZKPass integration, please refer to the documentation in the following GitHub repository:  
-[ZKPass Documentation](https://github.com/zkpass/documentation)
+[ZKPass Documentation](https://github.com/LeoFranklin015/TrustGigz/blob/master/Fiverr-zkPass.md)
 
 ---
 
@@ -125,7 +125,10 @@ To qualify for this track, we have adhered to the following requirements:
 
 2. **Project Demo**  
    - **Mainnet Demo**: [https://trustgigz-mainnet.vercel.app](https://trustgigz-mainnet.vercel.app)  
-   - **Testnet Demo**: [https://trustgigz.vercel.app](https://trustgigz.vercel.app)  
+   - **Testnet Demo**: [https://trustgigz.vercel.app](https://trustgigz.vercel.app)
+
+3. **Starter Guide**
+   - [Starter Guide](https://github.com/LeoFranklin015/TrustGigz/blob/master/How-To-Use.md)
 
 #### **Feedback on SpaceID SDK**
 
