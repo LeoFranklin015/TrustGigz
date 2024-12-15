@@ -103,4 +103,81 @@ BAS provides the foundational attestation framework for the platform. Below are 
   - **Testnet**: [0x645ac1d4ea9c398ce4e5789f57269a526b925d5f92916f3391f7e1065eede38c](https://testnet.bascan.io/schema/0x645ac1d4ea9c398ce4e5789f57269a526b925d5f92916f3391f7e1065eede38c)  
 
 
+---
+
+### **ZKPass**  
+For detailed information and implementation regarding ZKPass integration, please refer to the documentation in the following GitHub repository:  
+[ZKPass Documentation](https://github.com/zkpass/documentation)
+
+---
+
+### **SpaceID**
+
+#### **Qualification Requirements**  
+To qualify for this track, we have adhered to the following requirements:  
+
+1. **Deployment on BNB Chain Mainnet**  
+   - **Mainnet Contract Address**:  
+     [0x07d8EA3A3F284005FA5e813d89D6b41936B49E15](https://bscscan.com/address/0x07d8EA3A3F284005FA5e813d89D6b41936B49E15)  
+
+   - **Testnet Contract Address**:  
+     [0xd62378a75cfed3644d39bce139a40d3b27027fb1](https://testnet.bscscan.com/address/0xd62378a75cfed3644d39bce139a40d3b27027fb1)  
+
+2. **Project Demo**  
+   - **Mainnet Demo**: [https://trustgigz-mainnet.vercel.app](https://trustgigz-mainnet.vercel.app)  
+   - **Testnet Demo**: [https://trustgigz.vercel.app](https://trustgigz.vercel.app)  
+
+#### **Feedback on SpaceID SDK**
+
+1. **Web3Name Resolver**  
+   - **Issue**:  
+     When using the resolver function `createWeb3Name` in a client environment, recursive depth limits are occasionally reached. This issue has been observed intermittently on Brave browser but not on Google Chrome.  
+
+   - **Suggestion**:  
+     Investigate and address recursive calls or provide documentation on resolving this issue.
+
+2. **List of Chains Query**  
+   - **Issue**:  
+     When using the function `web3name.getDomainName()` with multiple chains in `queryChainIdList`, the function throws an error. The array parameter is misleading as it suggests support for multiple chains.  
+
+   - **Suggestion**:  
+     If multiple chains are not supported, explicitly document this limitation to avoid confusion.  
+
+     **Example**:
+     ```javascript
+     const name = await web3name.getDomainName({
+       address: '0x2886D6792503e04b19640C1f1430d23219AF177F',
+       queryChainIdList: [10200, 1], // Throws an error
+     });
+     ```
+
+3. **Ethers Version Compatibility**  
+   - **Issue**:  
+     The SpaceID SDK currently supports Ethers v5.7.2, while BAS SDK exclusively supports Ethers v6. This version mismatch caused significant dependency issues during integration.  
+
+   - **Suggestion**:  
+     Update SpaceID SDK to support Ethers v6 for better compatibility with other tools in the ecosystem.
+
+4. **Domain Registration Issue**  
+   - **Issue**:  
+     After downgrading to Ethers v5.7.2, the domain registration process still fails. While availability and pricing details are retrieved successfully, the registration process throws an error.
+
+   - **Suggestion**:  
+     Provide additional documentation or troubleshooting steps for the registration process.  
+
+     **Example of Error**:
+
+     <img width="564" alt="Screenshot 2024-12-15 at 3 12 43 PM" src="https://github.com/user-attachments/assets/4195d4ed-391d-47f9-aede-60b8412dcfa5" />
+
+
+https://github.com/user-attachments/assets/61244026-282f-4a42-8ead-a1d8cce6b9f8
+
+
+ 
+
+5. **General Feedback**  
+   - The ability to manage domain names across multiple ecosystems is impressive.  
+   - I appreciate the innovative approach to solving cross-ecosystem domain challenges and look forward to using SpaceID in future projects.  
+
+---
 
