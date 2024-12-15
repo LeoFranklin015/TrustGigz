@@ -110,8 +110,10 @@ BAS provides the foundational attestation framework for the platform. Below are 
 
 ### **ZKPass**  
 For detailed information and implementation regarding ZKPass integration, please refer to the documentation in the following GitHub repository:  
-[ZKPass Documentation](https://github.com/LeoFranklin015/TrustGigz/blob/master/Fiverr-zkPass.md)
+[ZKPass Fiverr](https://github.com/LeoFranklin015/TrustGigz/blob/master/Fiverr-zkPass.md)
 
+
+- Added another schema which i couldnt implement is : [ZKPass Freelancer.in](https://github.com/LeoFranklin015/TrustGigz/blob/master/Freelancer-corpratee-zkpass.md)
 ---
 
 ### **SpaceID**
