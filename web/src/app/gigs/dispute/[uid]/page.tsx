@@ -331,7 +331,7 @@ const DisputeResolutionPage = ({ params }: { params: { uid: string } }) => {
       const isAvailable = await connector.isTransgateAvailable();
 
       if (isAvailable) {
-        const schemaId = "9f5dd9b3f5e84a86b2515c70b4dc650a";
+        const schemaId = "e2b921f5f6744ef9bb6aab5ee1623a76";
         const res: any = await connector.launch(schemaId);
 
         console.log(res);
